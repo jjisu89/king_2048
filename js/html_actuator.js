@@ -46,22 +46,13 @@ HTMLActuator.prototype.clearContainer = function (container) {
   }
 };
 
+const random_number = Math.floor(Math.random() * (26 - 0 + 1)) + 26;
+
 var val2caption = function(val){
 
-  const captions = [
-  "왕2", 
-  "왕4",
-  "왕8",
-  "왕16",
-  "왕32", 
-  "왕64",
-  "왕128",
-  "왕256",
-  "왕512",
-  "왕1024",
-  "왕2048",
-  "왕4096"];
-
+  const names = ["태조","정종","태종","세종","문종","단종","세조","예종","성종","연산군","중종","인종","명종","선조","광해군","인조","효종","현종","숙종","경종","영조","정조","순조","헌종","철종","고종","태조","정종","태종","세종","문종","단종","세조","예종","성종","연산군","중종","인종","명종","선조","광해군","인조","효종","현종","숙종","경종","영조","정조","순조","헌종","철종","고종","태조","정종","태종","세종","문종","단종","세조","예종","성종","연산군","중종","인종","명종","선조","광해군","인조","효종","현종","숙종","경종","영조","정조","순조","헌종","철종","고종"];
+  const captions = names.slice(random_number, random_number+15);
+  
   // if(val <= 0) return "<span style='font-size:smaller'>Garbage</span>";
   // if(val == 1){
   //   var caption = "<span style='display:inline-block;line-height:1.2;vertical-align:middle'><span class='rel'>";
